@@ -19,7 +19,7 @@
     ></script>
 
     <!-- Greensock  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <!-- Font -->
     <link
@@ -34,41 +34,100 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="left"></div>
-      <div class="right"></div>
-
-      <nav class="nav">
-        <li class="logo">skudra</li>
-        <li class="menu"><i class="fa fa-bars"></i></li>
-        <li class="collection">collectiom</li>
-        <li class="explore">explore</li>
-        <li class="search">searcj</li>
-        <li class="profile">
-          <div class="img"></div>
-        </li>
-      </nav>
-
-      <div class="content">
-        <div class="img-wrapper">
-          <div class="karina"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    
+        <nav class="nav">
+            <ul>
+                <li class="logo">skudra</li>
+                <li class="menu"><i class="fa fa-bars"></i></li>
+                <li class="collection">collection</li>
+                <li class="explore">about</li>
+                <li class="search">search</li>
+                <li class="profile">
+                    <div class="img"></div>
+                </li>
+            </ul>
+        </nav>
+    
+        <div class="content container-fluid">
+            <div class="img-wrapper">
+                <div class="karina"></div>
+            </div>
+    
+            <div class="info">
+                <ul>
+                    <li>unsplash.com</li>
+                    <li>@skudra</li>
+                    <li>skudra.com</li>
+                    <li><i class="fa fa-share-alt"></i></li>
+                </ul>
+            </div>
+    
+            <div class="text">
+                <h1>skudra</h1>
+                <p>photographer</p>
+            </div>
+    
+            <div class="name">skudra</div>
+    
+            <div class="bottomnav">
+                <ul>
+                    <li>profile</li>
+                    <li>portfolio</li>
+                    <li>contact</li>
+                </ul>
+            </div>
         </div>
+    </div>
 
-        <div class="info">
-            <li>unsplash.com</li>
-            <li>@skudra</li>
-            <li>skudra.com</li>
-            <li><i class="fa fa-share-alt"></i></li>
-        </div>
-
-        <div class="name">Skudra</div>
-
-        <div class="bottomnav">
-           <li>profile</li>
-           <li>portfolio</li>
-           <li>contact</li>
-        </div>
-
-        <script src="js/main.js"></script>
+        <script>
+            TweenMax.to('.left', 2, {
+                delay: .8,
+                width: '50%',
+                ease: Power2.easeInOut
+            })
+            TweenMax.to('.right', 2, {
+                delay: .6,
+                width: '50%',
+                ease: Power3.easeInOut
+            })
+            TweenMax.from('.nav', 2, {
+                delay: .8,
+                opacity: 0,
+                ease: Expo.easeInOut
+            })
+            TweenMax.from('.text h1', 2, {
+                delay: .6,
+                x: 1000,
+                ease: Circ.easeInOut
+            })
+            TweenMax.from('.text p', 2, {
+                delay: .7,
+                x: 1000,
+                ease: Circ.easeInOut
+            })
+            TweenMax.to('.karina', 2, {
+                delay: 1.5,
+                width: '800px',
+                ease: Power2.easeInOut
+            })
+            TweenMax.staggerFrom('.bottomnav ul li', 2, {
+                delay: 1,
+                x: 1000,
+                ease: Circ.easeInOut
+            }, 0.08)
+            TweenMax.from('.info', 2, {
+                delay: 1.5,
+                y: 100,
+                ease: Circ.easeInOut
+            })
+            TweenMax.from('.name', 2, {
+                delay: 1.5,
+                x: -600,
+                ease: Circ.easeInOut
+            })
+        </script>
       </div>
     </div>
   </body>
