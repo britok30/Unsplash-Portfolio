@@ -33,6 +33,10 @@
     <title>Contact Me</title>
   </head>
   <body class="contactbody">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand logo" href="index.html">Skudra</a>
+    </nav>
+
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -106,6 +110,11 @@
       </div>
     </section>
 
+    <footer id="footer">
+        <p>Skudra</p>
+        <p>Design by Brito</p>
+    </footer>
+
     <script>
       TweenMax.from(".contact-heading", 2, {
         opacity: 0,
@@ -126,7 +135,7 @@
         delay: 0.7,
         ease: Expo.easeInOut
       });
-      
+
       TweenMax.from(".message-label", 2, {
         opacity: 0,
         y: -80,

@@ -29,6 +29,7 @@ ul {
 .sub-heading {
   font-size: 8rem;
   font-weight: 300;
+  padding: 3rem 0;
 }
 
 a:hover,
@@ -180,53 +181,73 @@ a:active {
 }
 
 .one {
-    background: url(../images/one.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/one.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .two {
-    background: url(../images/two.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/two.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 
 .three {
-    background: url(../images/three.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/three.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .four {
-    background: url(../images/four.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/four.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .five {
-    background: url(../images/five.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/five.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .six {
-    background: url(../images/six.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/six.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .seven {
-    background: url(../images/seven.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/seven.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .eight {
-    background: url(../images/eight.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/eight.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .nine {
-    background: url(../images/nine.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/nine.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .ten {
-    background: url(../images/ten.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/ten.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .eleven {
-    background: url(../images/eleven.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/eleven.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 .twelve {
-    background: url(../images/twelve.jpg) no-repeat center center/cover;
-    height: 50vh;
+  background: url(../images/twelve.jpg) no-repeat center center/cover;
+  height: 50vh;
+}
+
+.thirteen {
+  background: url(../images/thirteen.jpg) no-repeat center center/cover;
+  height: 50vh;
+}
+
+.fourteen {
+  background: url(../images/fourteen.jpg) no-repeat center center/cover;
+  height: 50vh;
+}
+
+.fifteen {
+  background: url(../images/fifteen.jpg) no-repeat center center/cover;
+  height: 50vh;
+}
+
+.sixteen {
+  background: url(../images/sixteen.jpg) no-repeat center center/cover;
+  height: 50vh;
 }
 
 /* CONTACT PAGE*/
@@ -303,4 +324,14 @@ textarea:focus {
     margin: 5% 0;
     width: 98%;
   }
+}
+
+/* FOOTER */
+#footer {
+  padding: 6rem 0;
+}
+#footer p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
