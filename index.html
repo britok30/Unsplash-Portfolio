@@ -23,7 +23,7 @@
 
     <!-- Font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap"
       rel="stylesheet"
     />
 
@@ -34,101 +34,96 @@
   </head>
   <body>
     <div class="wrapper">
-        <div class="left"></div>
-        <div class="right"></div>
-    
-        <nav class="nav">
-            <ul>
-                <li class="logo">skudra</li>
-                <li class="menu"><i class="fa fa-bars"></i></li>
-                <li class="collection">collection</li>
-                <li class="explore">about</li>
-                <li class="search">search</li>
-                <li class="profile">
-                    <div class="img"></div>
-                </li>
-            </ul>
-        </nav>
-    
-        <div class="content container-fluid">
-            <div class="img-wrapper">
-                <div class="karina"></div>
-            </div>
-    
-            <div class="info">
-                <ul>
-                    <li>unsplash.com</li>
-                    <li>@skudra</li>
-                    <li>skudra.com</li>
-                    <li><i class="fa fa-share-alt"></i></li>
-                </ul>
-            </div>
-    
-            <div class="text">
-                <h1>skudra</h1>
-                <p>photographer</p>
-            </div>
-    
-            <div class="name">skudra</div>
-    
-            <div class="bottomnav">
-                <ul>
-                    <li>profile</li>
-                    <li>portfolio</li>
-                    <li>contact</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+      <div class="left"></div>
+      <div class="right"></div>
 
-        <script>
-            TweenMax.to('.left', 2, {
-                delay: .8,
-                width: '50%',
-                ease: Power2.easeInOut
-            })
-            TweenMax.to('.right', 2, {
-                delay: .6,
-                width: '50%',
-                ease: Power3.easeInOut
-            })
-            TweenMax.from('.nav', 2, {
-                delay: .8,
-                opacity: 0,
-                ease: Expo.easeInOut
-            })
-            TweenMax.from('.text h1', 2, {
-                delay: .6,
-                x: 1000,
-                ease: Circ.easeInOut
-            })
-            TweenMax.from('.text p', 2, {
-                delay: .7,
-                x: 1000,
-                ease: Circ.easeInOut
-            })
-            TweenMax.to('.karina', 2, {
-                delay: 1.5,
-                width: '800px',
-                ease: Power2.easeInOut
-            })
-            TweenMax.staggerFrom('.bottomnav ul li', 2, {
-                delay: 1,
-                x: 1000,
-                ease: Circ.easeInOut
-            }, 0.08)
-            TweenMax.from('.info', 2, {
-                delay: 1.5,
-                y: 100,
-                ease: Circ.easeInOut
-            })
-            TweenMax.from('.name', 2, {
-                delay: 1.5,
-                x: -600,
-                ease: Circ.easeInOut
-            })
-        </script>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand logo" href="#">Skudra</a>
+      </nav>
+
+      <div class="content">
+        <div class="img-wrapper">
+          <div class="karina"></div>
+        </div>
+
+        <div class="info">
+          <ul>
+            <li><a href="#">unsplash.com</a></li>
+            <li><a href="#">@skudra</a></li>
+            <li><a href="index.html">skudra.com</a></li>
+            <li><i class="fa fa-share-alt"></i></li>
+          </ul>
+        </div>
+
+        <div class="text">
+          <h1>skudra</h1>
+        </div>
+
+        <div class="name">skudra</div>
+
+        <div class="bottomnav">
+          <ul>
+            <li><a href="showcase.html">work</a></li>
+            <li><a href="index.html">portfolio</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
+        <section id="portfolio"></section>
       </div>
     </div>
+
+    <script>
+      TweenMax.to(".left", 2, {
+        delay: 0.8,
+        width: "50%",
+        ease: Power2.easeInOut
+      });
+      TweenMax.to(".right", 2, {
+        delay: 0.6,
+        width: "50%",
+        ease: Power3.easeInOut
+      });
+      TweenMax.from(".nav", 2, {
+        delay: 0.8,
+        opacity: 0,
+        ease: Expo.easeInOut
+      });
+      TweenMax.from(".text h1", 2, {
+        delay: 0.6,
+        x: 1000,
+        ease: Circ.easeInOut
+      });
+      TweenMax.from(".text p", 2, {
+        delay: 0.7,
+        x: 1000,
+        ease: Circ.easeInOut
+      });
+      TweenMax.to(".karina", 2, {
+        delay: 1.5,
+        width: "800px",
+        ease: Power2.easeInOut
+      });
+      TweenMax.staggerFrom(
+        ".bottomnav ul li",
+        2,
+        {
+          delay: 1,
+          x: 1000,
+          ease: Circ.easeInOut
+        },
+        0.08
+      );
+      TweenMax.from(".info", 2, {
+        delay: 1.5,
+        y: 100,
+        ease: Circ.easeInOut
+      });
+      TweenMax.from(".name", 2, {
+        delay: 1.5,
+        x: -600,
+        ease: Circ.easeInOut
+      });
+    </script>
   </body>
 </html>

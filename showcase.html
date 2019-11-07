@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/b7319462f9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Greensock  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>My Work</title>
+  </head>
+
+  <body class="workbody">
+      <h2 class="sub-heading">My Work</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 one"></div>
+        <div class="col-md-3 two"></div>
+        <div class="col-md-3 three"></div>
+        <div class="col-md-3 four"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 five"></div>
+        <div class="col-md-3 six"></div>
+        <div class="col-md-3 seven"></div>
+        <div class="col-md-3 eight"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 nine"></div>
+        <div class="col-md-3 ten"></div>
+        <div class="col-md-3 eleven"></div>
+        <div class="col-md-3 twelve"></div>
+      </div>
+    </div>
+
+    <script>
+      TweenMax.from(".navbar-brand", 2, {
+        delay: 2.4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+      });
+    </script>
+
+  </body>
+</html>

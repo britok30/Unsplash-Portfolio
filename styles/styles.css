@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Raiderfont";
-  src: local("Raiderfont"), url("./fonts/Raiderfont.ttf") format("truetype");
+  src: local("Raiderfont"), url("../fonts/Raiderfont.ttf") format("truetype");
 }
 
 * {
@@ -9,17 +9,37 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif !important;
   font-size: 12px;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
 }
 
+/* UTILITIES  */
 ul {
   list-style: none;
 }
+
+.sub-heading {
+  font-size: 8rem;
+  font-weight: 300;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* LEFT/RIGHT */
 
 .left,
 .right {
@@ -36,98 +56,59 @@ ul {
 }
 
 .right {
-  background: #333;
+  background: #111111;
   right: 0%;
   width: 100%;
 }
 
-.nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80px;
-  padding: 0 20px;
+/* NAVBAR */
+.navbar {
+  font-family: "Lato" !important;
+  font-weight: 300;
 }
 
-.nav ul li {
-  display: inline-block;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 8px;
-  font-weight: 600;
-  padding: 0 30px;
+.nav-item {
+  font-size: 1.4rem;
 }
 
-.nav .logo {
-  flex: 1;
-  font-size: 18px;
-  letter-spacing: 0;
+.logo {
+  font-size: 2.5rem;
 }
 
-.nav .menu {
-  flex: 1;
-  font-size: 18px;
-}
-
-.nav .collection {
-  flex: 1;
-}
-
-.nav .explore {
-  flex: 4;
-}
-
-.nav .search {
-  flex: 3;
-}
-
-.nav .profile {
-  flex: 0;
-}
-
-.nav .profile .img {
-  background-image: url("../images//profile.jpg");
-  background-position: 50%;
-  background-size: cover;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-}
+/* CONTENT */
 
 .img-wrapper {
   position: absolute;
   bottom: 0;
-  left: 180px;
+  left: 18rem;
 }
 
 .img-wrapper .karina {
-  background-image: url("../images/main.jpg");
-  background-size: cover;
-  height: 550px;
+  background: url("../images/main.jpg") no-repeat center center/cover;
+  height: 55rem;
   width: 0;
 }
 
 .info {
   position: absolute;
   bottom: 0;
-  left: 180px;
+  left: 18rem;
   background: rgba(0, 0, 0, 0.8);
   padding: 0 10px;
 }
 
 .info ul li {
   display: inline-block;
-  padding: 20px 25px;
+  padding: 2rem 2.5rem;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 8px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .info i {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .text {
@@ -138,7 +119,7 @@ ul {
 }
 
 .text h1 {
-  font-size: 90px;
+  font-size: 9rem;
   color: #fff;
   font-family: "Raiderfont";
   text-transform: uppercase;
@@ -153,7 +134,7 @@ ul {
 .name {
   position: absolute;
   top: 50%;
-  left: -270px;
+  left: -27rem;
   transform: translateY(-50%);
   font-size: 90px;
   font-family: "Raiderfont";
@@ -161,6 +142,8 @@ ul {
   color: transparent;
   -webkit-text-stroke: 2px #fff;
 }
+
+/* BOTTOM NAV */
 
 .bottomnav {
   position: absolute;
@@ -171,19 +154,153 @@ ul {
 .bottomnav ul li {
   color: #fff;
   text-transform: uppercase;
+  font-weight: 300;
   letter-spacing: 15px;
   margin-top: 20px;
 }
 
 .bottomnav ul li:nth-child(2) {
-  font-weight: bolder;
+  font-weight: 400;
 }
 
 .bottomnav ul li:nth-child(2)::before {
   content: "";
   display: inline-block;
   border: 1px solid #fff;
-  width: 65px;
+  width: 6.5rem;
   margin: 0 10px 0 -78px;
   transform: translateY(-3px);
+}
+
+/* WORK PAGE */
+.workbody {
+  background: #181818;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.one {
+    background: url(../images/one.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.two {
+    background: url(../images/two.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+
+.three {
+    background: url(../images/three.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.four {
+    background: url(../images/four.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.five {
+    background: url(../images/five.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.six {
+    background: url(../images/six.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.seven {
+    background: url(../images/seven.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.eight {
+    background: url(../images/eight.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.nine {
+    background: url(../images/nine.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.ten {
+    background: url(../images/ten.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.eleven {
+    background: url(../images/eleven.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+.twelve {
+    background: url(../images/twelve.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+
+/* CONTACT PAGE*/
+#contact {
+  margin-top: 5rem;
+}
+.contactbody {
+  background: #181818;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#contact-form {
+  margin: 5% 0;
+}
+
+.contact-lite {
+  font-weight: 300;
+}
+
+.contact .icon-title {
+  margin-top: 1rem;
+  color: #000;
+}
+
+#contact-form ul {
+  list-style: none;
+  margin-bottom: 4rem;
+  border-radius: 0;
+  padding: 0;
+}
+
+#contact-form li:last-of-type {
+  border-bottom: none;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 2.2rem;
+  color: rgb(97, 97, 97);
+}
+
+.btn {
+  font-size: 1.3rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  resize: vertical;
+  background: transparent;
+  color: #101010;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.textarea {
+  border-bottom: 1px solid #c9c9c9;
+}
+
+@media (max-width: 900px) {
+  #contact-form {
+    margin: 5% 0;
+    width: 98%;
+  }
 }

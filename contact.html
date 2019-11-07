@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/b7319462f9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Greensock  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Contact Me</title>
+  </head>
+  <body class="contactbody">
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-heading">
+            <h2 class="sub-heading contact-heading">Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <form action="" name="contact-form" id="contact-form" method="POST">
+              <ul class="form-list">
+                <li>
+                  <label class="name-label" for="contact-name">Name :</label>
+                  <div class="textarea">
+                    <input
+                      type="text"
+                      name="contact-name"
+                      id="contact-name"
+                      value=""
+                      required
+                    />
+                  </div>
+                </li>
+
+                <br />
+
+                <li>
+                  <label class="email-label" for="contact-email"
+                    >E-mail :</label
+                  >
+                  <div class="textarea">
+                    <input
+                      type="email"
+                      name="contact-email"
+                      id="contact-email"
+                      value=""
+                      required
+                    />
+                  </div>
+                </li>
+
+                <br />
+
+                <li>
+                  <label class="message-label" for="contact-project"
+                    >Message :</label
+                  >
+                  <div class="textarea">
+                    <textarea
+                      name="contact-project"
+                      id="contact-project"
+                      rows="6"
+                      required
+                    ></textarea>
+                  </div>
+                </li>
+              </ul>
+
+              <button
+                type="submit"
+                name="contact-submit"
+                id="contact-submit"
+                class="send btn btn-outline-light"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      TweenMax.from(".contact-heading", 2, {
+        opacity: 0,
+        y: -80,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".name-label", 2, {
+        opacity: 0,
+        y: -80,
+        delay: 0.5,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".email-label", 2, {
+        opacity: 0,
+        y: -80,
+        delay: 0.7,
+        ease: Expo.easeInOut
+      });
+      
+      TweenMax.from(".message-label", 2, {
+        opacity: 0,
+        y: -80,
+        delay: 0.9,
+        ease: Expo.easeInOut
+      });
+    </script>
+  </body>
+</html>
