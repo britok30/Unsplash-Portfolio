@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Skudra is a photographer & graphic designer based in Toronto, Canada" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Bootstrap  -->
@@ -12,11 +13,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <!-- Icons -->
-    <script
-      src="https://kit.fontawesome.com/b7319462f9.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- Greensock  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -50,13 +46,13 @@
           <ul>
             <li><a href="#">unsplash.com</a></li>
             <li><a href="#">@skudra</a></li>
-            <li><a href="index.html">skudra.com</a></li>
-            <li><i class="fa fa-share-alt"></i></li>
+            <li><a href="#">@skudra@gmail.com</a></li>
           </ul>
         </div>
 
         <div class="text">
           <h1>skudra</h1>
+          <p class="text-p">Photographer | Graphic Designer | Toronto, CA</p>
         </div>
 
         <div class="name">skudra</div>
@@ -71,57 +67,6 @@
       </div>
     </div>
 
-    <script>
-      TweenMax.to(".left", 2, {
-        delay: 0.8,
-        width: "50%",
-        ease: Power2.easeInOut
-      });
-      TweenMax.to(".right", 2, {
-        delay: 0.6,
-        width: "50%",
-        ease: Power3.easeInOut
-      });
-      TweenMax.from(".nav", 2, {
-        delay: 0.8,
-        opacity: 0,
-        ease: Expo.easeInOut
-      });
-      TweenMax.from(".text h1", 2, {
-        delay: 0.6,
-        x: 1000,
-        ease: Circ.easeInOut
-      });
-      TweenMax.from(".text p", 2, {
-        delay: 0.7,
-        x: 1000,
-        ease: Circ.easeInOut
-      });
-      TweenMax.to(".karina", 2, {
-        delay: 1.5,
-        width: "800px",
-        ease: Power2.easeInOut
-      });
-      TweenMax.staggerFrom(
-        ".bottomnav ul li",
-        2,
-        {
-          delay: 1,
-          x: 1000,
-          ease: Circ.easeInOut
-        },
-        0.08
-      );
-      TweenMax.from(".info", 2, {
-        delay: 1.5,
-        y: 100,
-        ease: Circ.easeInOut
-      });
-      TweenMax.from(".name", 2, {
-        delay: 1.5,
-        x: -600,
-        ease: Circ.easeInOut
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
