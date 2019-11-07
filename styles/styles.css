@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* UTILITIES  */
 ul {
   list-style: none;
