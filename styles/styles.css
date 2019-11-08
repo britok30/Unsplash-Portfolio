@@ -63,13 +63,7 @@ a:active {
 }
 
 .right {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.37)),
-      to(rgba(0, 0, 0, 0.37))
-    ),
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.37)), to(rgba(0, 0, 0, 0.37))),
     url("../images/toronto.jpeg") no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)),
     url("../images/toronto.jpeg") no-repeat center center/cover;
@@ -101,13 +95,7 @@ a:active {
 }
 
 .img-wrapper .karina {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.2)),
-      to(rgba(0, 0, 0, 0.2))
-    ),
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
     url("../images/skudra.jpeg") no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/skudra.jpeg") no-repeat center center/cover;
@@ -299,12 +287,19 @@ a:active {
 }
 
 .slick-slide.slick-center {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.8s 1.4s cubic-bezier(0.84, 0, 0.08, 0.99);
+  transition: -webkit-transform 0.8s 1.4s cubic-bezier(0.84, 0, 0.08, 0.99);
   transition: transform 0.8s 1.4s cubic-bezier(0.84, 0, 0.08, 0.99);
+  transition: transform 0.8s 1.4s cubic-bezier(0.84, 0, 0.08, 0.99), -webkit-transform 0.8s 1.4s cubic-bezier(0.84, 0, 0.08, 0.99);
 }
 
 .slick-slide {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.84, 0, 0.08, 0.99);
+  transition: -webkit-transform 0.7s cubic-bezier(0.84, 0, 0.08, 0.99);
   transition: transform 0.7s cubic-bezier(0.84, 0, 0.08, 0.99);
+  transition: transform 0.7s cubic-bezier(0.84, 0, 0.08, 0.99), -webkit-transform 0.7s cubic-bezier(0.84, 0, 0.08, 0.99);
 }
 
 .slider-control {
@@ -313,7 +308,10 @@ a:active {
   z-index: 2;
   bottom: 8%;
   left: 15%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -506,10 +504,13 @@ textarea:focus {
 .aboutbody {
   background: #181818;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .hero {
   height: 70vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.329)), to(rgba(0, 0, 0, 0.322))),
+    url("../images/about.jpeg") no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.322)),
     url("../images/about.jpeg") no-repeat center center/cover;
   position: relative;
@@ -518,6 +519,7 @@ textarea:focus {
 #hero-title {
   position: absolute;
   color: #fff;
+  font-size: 4rem;
   font-weight: 300;
   top: 55%;
   left: 50%;
