@@ -31,6 +31,18 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <title>My Work</title>
   </head>
 
@@ -39,6 +51,175 @@
       <a class="navbar-brand logo" href="index.html">S.</a>
     </nav>
 
+    <div class="text-slider-wrapper">
+      <div class="text-slider">
+        <div class="text-slide">
+          <h1>
+            Earth
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+           Moon
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            France
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+           San Francisco <br/>
+           California
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Walker
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            See your <br/>
+            future
+           </h1>
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            City <br/>
+            Mornings
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Business
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Mountain Top
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Shadow
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Storms
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Hello
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Frost
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+           Off White
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+           Desert
+          </h1>
+        </div>
+        <div class="text-slide">
+          <h1>
+            Mystery
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-control">
+      <div class="prev">
+        <button type="button">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </div>
+      <div class="next">
+        <button type="button">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="blocks">
+      <div class="block-1"></div>
+      <div class="block-2"></div>
+      <div class="block-3"></div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="image-slider">
+      <div class="image-slide one"></div>
+      <div class="image-slide two"></div>
+      <div class="image-slide three"></div>
+      <div class="image-slide four"></div>
+      <div class="image-slide five"></div>
+      <div class="image-slide six"></div>
+      <div class="image-slide seven"></div>
+      <div class="image-slide eight"></div>
+      <div class="image-slide nine"></div>
+      <div class="image-slide ten"></div>
+      <div class="image-slide eleven"></div>
+      <div class="image-slide twelve"></div>
+      <div class="image-slide thirteen"></div>
+      <div class="image-slide fourteen"></div>
+      <div class="image-slide fifteen"></div>
+      <div class="image-slide sixteen"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="js/slick.js"></script>
+
+    <script>
+      var sickPrimary = {
+        autoplay: true,
+        autoplaySpeed: 2400,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 1800,
+        cssEase: "cubic-bezier(.84, 0, .08, .99)",
+        asNavFor: ".text-slider",
+        centerMode: true,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next")
+      };
+      var sickSecondary = {
+        autoplay: true,
+        autoplaySpeed: 2400,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1800,
+        cssEase: "cubic-bezier(.84, 0, .08, .99)",
+        asNavFor: ".image-slider",
+        prevArrow: $(".prev"),
+        nextArrow: $(".next")
+      };
+      $(".image-slider").slick(sickPrimary);
+      $(".text-slider").slick(sickSecondary);
+    </script>
+  </body>
+</html>
+
+<!-- </head>
+  
+  <body class="workbody">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand logo" href="index.html">S.</a>
+    </nav>
+  
     <div class="container">
       <div class="row">
         <div class="col-md-3 one"></div>
@@ -64,11 +245,12 @@
         <div class="col-md-3 fifteen"></div>
         <div class="col-md-3 sixteen"></div>
       </div>
-
+  
       <footer id="footer">
         <p>&copy;2019 Skudra</p>
         <p>Design by Brito</p>
       </footer>
     </div>
   </body>
-</html>
+  
+  </html> -->
