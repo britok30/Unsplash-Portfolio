@@ -108,9 +108,9 @@ a:active {
       from(rgba(0, 0, 0, 0.2)),
       to(rgba(0, 0, 0, 0.2))
     ),
-    url("../images/main.jpg") no-repeat center center/cover;
+    url("../images/skudra.jpeg") no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/main.jpg") no-repeat center center/cover;
+    url("../images/skudra.jpeg") no-repeat center center/cover;
   height: 55rem;
   width: 0;
   border-radius: 3px;
@@ -502,6 +502,52 @@ textarea:focus {
   }
 }
 
+/* ABOUT PAGE */
+.aboutbody {
+  background: #181818;
+  font-family: "Lato", sans-serif;
+}
+
+.hero {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.322)),
+    url("../images/about.jpeg") no-repeat center center/cover;
+  position: relative;
+}
+
+#hero-title {
+  position: absolute;
+  color: #fff;
+  font-weight: 300;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.aboutcontent {
+  margin: 50px 0;
+  width: 65% !important;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 90% !important;
+  }
+}
+
+.aboutcontent {
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.aboutcontent p {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
 /* FOOTER */
 #footer {
   padding: 6rem 0;
@@ -510,6 +556,7 @@ textarea:focus {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 300;
+  color: #fff;
 }
 
 /* -----------------------

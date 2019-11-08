@@ -29,6 +29,11 @@
       rel="stylesheet"
     />
 
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="styles/animate.css" />
+
+    <script src="js/wow.min.js"></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css" />
 
@@ -46,7 +51,12 @@
             <form action="" name="contact-form" id="contact-form" method="POST">
               <ul class="form-list">
                 <li>
-                  <label class="name-label" for="contact-name">Name :</label>
+                  <label
+                    class="name-label wow fadeInUp"
+                    data-wow-delay="0.5s"
+                    for="contact-name"
+                    >Name :</label
+                  >
                   <div class="textarea">
                     <input
                       type="text"
@@ -61,7 +71,10 @@
                 <br />
 
                 <li>
-                  <label class="email-label" for="contact-email"
+                  <label
+                    class="email-label wow fadeInUp"
+                    for="contact-email"
+                    data-wow-delay="0.7s"
                     >E-mail :</label
                   >
                   <div class="textarea">
@@ -78,7 +91,10 @@
                 <br />
 
                 <li>
-                  <label class="message-label" for="contact-project"
+                  <label
+                    class="message-label wow fadeInUp"
+                    for="contact-project"
+                    data-wow-delay="0.9s"
                     >Message :</label
                   >
                   <div class="textarea">
@@ -110,5 +126,10 @@
       <p>&copy;2019 Skudra</p>
       <p>Design by Brito</p>
     </footer>
+
+    <script type="text/javascript">
+      //Scroll reveal animation
+      new WOW().init();
+    </script>
   </body>
 </html>
